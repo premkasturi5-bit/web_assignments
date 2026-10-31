@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Learning Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .categories { margin-bottom: 20px; }
+        .categories button { padding: 8px 12px; margin-right: 5px; cursor: pointer; }
+        .grid { display: flex; gap: 20px; flex-wrap: wrap; }
+        .card { background: white; padding: 15px; border-radius: 5px; width: 280px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 5px; }
+        .instructor { display: flex; align-items: center; gap: 10px; margin: 10px 0; }
+        .instructor img { width: 30px; height: 30px; border-radius: 50%; }
+        .progress-bg { background: #ddd; height: 8px; border-radius: 4px; margin: 10px 0; }
+        .progress-bar { background: green; height: 100%; width: 50%; border-radius: 4px; }
+        .btn { background: blue; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
 
+    <h2>Course Categories</h2>
+    <div class="categories">
+        <button>All</button>
+        <button>Coding</button>
+        <button>Design</button>
+    </div>
+
+    <div class="grid">
+        <!-- Course 1 -->
+        <div class="card">
+            <img src="https://picsum.photos/280/150?1" alt="Thumbnail">
+            <h3>HTML & CSS Basics</h3>
+            <p>Learn how to build simple websites step-by-step.</p>
+            
+            <div class="instructor">
+                <img src="https://picsum.photos/30?1" alt="User">
+                <span>John Doe</span>
+            </div>
+
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Basic HTML Tags</li>
+                <li>CSS Styling</li>
+            </ul>
+
+            <p>Progress: 50%</p>
+            <div class="progress-bg">
+                <div class="progress-bar"></div>
+            </div>
+
+            <button class="btn">Enroll Now</button>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="card">
+            <img src="https://picsum.photos/280/150?2" alt="Thumbnail">
+            <h3>JavaScript for Beginners</h3>
+            <p>Add interactivity and logic to your web pages.</p>
+            
+            <div class="instructor">
+                <img src="https://picsum.photos/30?2" alt="User">
+                <span>Jane Smith</span>
+            </div>
+
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Variables & Functions</li>
+                <li>DOM Manipulation</li>
+            </ul>
+
+            <p>Progress: 0%</p>
+            <div class="progress-bg">
+                <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+
+            <button class="btn">Enroll Now</button>
+        </div>
+    </div>
+
+</body>
+</html>
